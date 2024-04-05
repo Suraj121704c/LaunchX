@@ -6,6 +6,7 @@ export default function CustomTextInput({
   placeHolderText,
   labelText,
   onChangeText,
+  onSubmitEditing
 }: any) {
   return (
     <View style={style.view}>
@@ -16,6 +17,7 @@ export default function CustomTextInput({
         onChangeText={onChangeText}
         style={style.input}
         placeholder={placeHolderText}
+        onSubmitEditing={onSubmitEditing}
       />
     </View>
   );
